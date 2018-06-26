@@ -1,0 +1,242 @@
+@media screen and (max-width: 1366px)
+  .js-main-slider
+    width 100%
+    max-width calc(100vw - 341px)
+
+    .main-slider__item
+      img
+        width calc(100vw - 341px)
+
+
+@media screen and (max-width: 1120px)
+  .header-nav
+    padding 0 20px
+
+@media screen and (max-width: 1050px)
+  .header-nav
+    padding 0 10px
+    min-width 530px
+
+  .header-user
+    padding 0 10px
+    min-width 400px
+
+  .js-main-slider
+    .main-item
+      padding 50px 100px 70px 50px
+
+@media screen and (max-width: 950px)
+  header
+    height 128px
+    .container
+      padding 0
+      flex-direction column
+      justify-content space-between
+      align-items center
+      height 128px
+  .header-nav
+    padding 0 20px
+    max-width none
+    width 100%
+
+    &__list
+      justify-content flex-start
+
+  .header-user
+    padding 0 20px
+    max-width none
+    width 100%
+
+  .header-menu
+    top 128px
+
+@media screen and (max-width: 870px)
+  .products-menu
+    padding 28px 30px 42px
+    max-width none
+    width 100%
+
+    &__list
+      padding 0 20px
+
+  .activity-menu
+    padding 28px 30px 42px
+    max-width none
+    width 100%
+
+  .slider
+    .container
+      justify-content center
+      max-height 500px
+
+      .js-main-slider
+        .main-item
+          padding 40px
+
+        .main-slider__item
+          img
+            height 500px
+
+      .small-slider
+        .js-small-slider
+          max-height 465px
+
+          .slick-list
+            max-height 465px
+
+      .small-slider__see-more
+        top 50px
+        h4
+          font-size 28px
+
+
+@media screen and (max-width: 650px)
+  .header-nav
+    min-width 400px
+  .header-nav__item
+    padding 0 5px
+  .products-menu
+    flex-direction column
+
+    &__info
+      margin-bottom 25px
+
+    &__list
+      flex-direction row
+      justify-content space-between
+
+      li
+        margin 0
+  .activity-menu
+    flex-direction column
+    align-items center
+
+    &__info
+      margin-bottom 25px
+
+  .slider
+    .container
+      max-height 400px
+      .js-main-slider
+        .main-item
+          padding 20px
+
+          h4
+            height 20px
+            font-size 20px
+
+        .main-slider__item
+          img
+            height 400px
+
+      .small-slider
+        .js-small-slider
+          max-height 365px
+
+          .slick-list
+            max-height 365px
+
+      .small-slider__see-more
+        top 20px
+        h4
+          font-size 28px
+      .small-slider__info
+        padding 20px
+
+@media screen and (max-width: 550px)
+  .products-menu
+    padding 28px 15px 42px
+  .products-menu__image
+    .slick-dots
+      min-width 228px
+      li
+        .products-slider__dots
+          padding 0 0 0 20px
+
+@media screen and (max-width: 500px)
+  .header-nav
+    min-width 370px
+    padding 0 5px
+    font-size 14px
+
+  .header-user
+    padding 0 10px
+    min-width 370px
+    font-size 14px
+
+    .header-user__search
+      padding 0 5px
+
+      span
+        padding 0 5px
+
+      .icon-headerSearch
+        min-width 18px
+
+    .header-user__icon
+      padding 0 10px
+
+  .header-user__input
+    font-size 12px
+
+  .products-menu__image
+    .slick-list
+      min-width 186px
+    .slick-dots
+      min-width 200px
+      li
+        .products-slider__dots
+          font-size 12px
+
+@media screen and (max-width: 450px)
+  .products-menu__image
+    .slick-dots
+      min-width 100px
+      li
+        .products-slider__dots
+          max-height 36px
+          height 100%
+
+  .slider
+    height 630px
+    .container
+      justify-content center
+      height 630px
+
+      .js-main-slider
+        display none
+
+      .small-slider
+        max-width none
+        height 565px
+        .js-small-slider
+          max-height 565px
+
+          .small-slider__item
+            img
+              width calc(100vw)
+              height 565px
+
+
+          .slick-dots
+            bottom 80px
+
+          .slick-active
+            .small-slider__dots
+              &:after
+                width 135%
+
+          .slick-list
+            max-height 565px
+
+      .small-slider__see-more
+        top 144px
+        h4
+          font-size 38px
+          &:before
+            display none
+          &:after
+            width 120%
+      .small-slider__info
+        padding 28px 50px 28px 30px
+        max-width none

@@ -1,0 +1,34 @@
+header
+  .container
+    nav.header-nav
+      ul.header-nav__list
+        li.header-nav__item.header-nav__item--products
+          +icon('headerArrowRight')
+          a(href="#").header-nav__link.header-nav__link--products Products
+        li.header-nav__item.header-nav__item--activity
+          +icon('headerArrowRight')
+          a(href="#").header-nav__link.header-nav__link--activity Activity
+        li.header-nav__item
+          a(href="#").header-nav__link Promotion
+        li.header-nav__item
+          a(href="#").header-nav__link Company
+        li.header-nav__item
+          a(href="#").header-nav__link Be a hero
+      include productsMenu
+      include activityMenu
+    
+    .header-user
+      form.header-user__search
+        label(for="search")
+          input(type="text" name="search" id="search" placeholder="Knives for hunting").header-user__input
+          span Search
+          +icon('headerSearch')
+      .header-user__icon
+        +icon('headerBasket')
+      .header-user__icon
+        +icon('headerProfile')
+      .header-user__sandwich
+        span.sandwich-line.sandwich-line--top
+        span.sandwich-line.sandwich-line--middle
+        span.sandwich-line.sandwich-line--bottom
+      include menu

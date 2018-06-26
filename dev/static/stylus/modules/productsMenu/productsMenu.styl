@@ -1,0 +1,74 @@
+.products-menu
+  padding 28px 98px 42px 50px
+  display none
+  justify-content space-between
+  position absolute
+  top 62px
+  left 0
+  max-width 854px
+  width 100%
+  background-color rgba(30, 32, 44, 0.95)
+  z-index 2
+
+  &.active
+    display flex
+
+  &__info
+    position relative
+
+  &__image
+    display flex
+    justify-content flex-start
+
+    .slick-list
+      size(186px)
+
+    .slick-dots
+      padding 0
+
+      li
+        margin-bottom 6px
+        display flex
+        align-items flex-start
+        text-align left
+
+        &:last-child
+          margin-bottom 0
+
+        .products-slider__dots
+          position relative
+          padding 0 0 0 45px
+          height 18px
+          background none
+          border none
+          color #eeeeee
+          cursor pointer
+          font-size 14px
+
+          &:hover:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            height 1px
+            width 102%
+            background-color #ec1e24
+            transition all linear .5s
+
+  &__list
+    padding 0 60px 0 82px
+    display flex
+    flex-direction column
+
+    li
+      margin-bottom 25px
+
+  &__link
+    color #eeeeee
+    font-family boldFont
+    text-transform uppercase
+    transition all linear .5s
+
+    &:hover
+      color #ec1e24
+      cursor pointer
